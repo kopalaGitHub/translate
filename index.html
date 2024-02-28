@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="dropDownDiv">
+        <div class="dropdown" style="float: left">
+          <button class="dropbtn">lenguage</button>
+          <div class="dropdown-content" style="left: 0">
+            <a onclick="georgiaToEnglish()" href="#">Georgia &rarr; English</a>
+            <a onclick="englishToGeorgia()" href="#">English &rarr; Georgia</a>
+            <a onclick="georgiaToRussia()" href="#">Georgia &rarr; Russia</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p id="showTranslate" class="center">where to where :D</p>
+        <input id="input" class="textStyle" type="text" />
+        <button onclick="translateIt()" class="button">translate</button>
+      </div>
+      <p id="output" class="textStyle">Out Put</p>
+      <button onclick="addWordButton()" class="bottomButton">
+        if your word doesn't exist pls click me
+      </button>
+      <div id="addDiv">
+        <input id="firstWord" class="textStyle" placeholder="" type="text" />
+        <input id="secondWord" class="textStyle" placeholder="" type="text" />
+        <button onclick="addNewWord()">save</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
